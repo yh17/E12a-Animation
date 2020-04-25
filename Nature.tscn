@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://lowpoly_scene.dae" type="PackedScene" id=1]
 [ext_resource path="res://Character.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Character.gd" type="Script" id=3]
 
 [sub_resource type="ProceduralSky" id=1]
 radiance_size = 5
@@ -65,6 +66,7 @@ data = SubResource( 3 )
 
 [node name="Character" parent="." index="87" instance=ExtResource( 2 )]
 transform = Transform( 0.711934, 0, 0.702246, 0, 1, 0, -0.702246, 0, 0.711934, 6.15056, 0, -3.21154 )
+script = ExtResource( 3 )
 
 [node name="Ground" type="StaticBody" parent="." index="88"]
 
